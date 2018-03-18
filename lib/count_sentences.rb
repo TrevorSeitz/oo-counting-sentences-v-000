@@ -20,8 +20,9 @@ class String
     count = 0
     sentence_end = [".", "!", "?", "..."]
     sentence_end.any? {|punctuation|
-      self.end_with?(punctuation)
-        count +=1}
+      if self.end_with?(punctuation)
+        count +=1
+      end}
 
     count
   end

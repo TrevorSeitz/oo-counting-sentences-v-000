@@ -14,10 +14,11 @@ class String
     self.end_with?("!")
   end
 
-  sentence_end = [".", "!", "?", "..."]
+
 
   def count_sentences
     count = 0
+    sentence_end = [".", "!", "?", "..."]
     sentence_end.any {|punctuation|
       self.end_with?(punctuation)
         count +=1}

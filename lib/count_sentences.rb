@@ -14,8 +14,8 @@ class String
     self.end_with?{"!"}
       true
     else
-      false
-      
+      true
+
   end
 
   def count_sentences

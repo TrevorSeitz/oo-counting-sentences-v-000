@@ -17,13 +17,6 @@ class String
 
 
   def count_sentences
-    count = 0
-    sentence_end = [".", "!", "?", "..."]
-    sentence_end.any? {|punctuation|
-      if self.end_with?(punctuation)
-        count +=1
-      end}
-
-    count
+    self.scan(/[^\.!?]/).count
   end
 end

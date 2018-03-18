@@ -17,7 +17,7 @@ class String
 
 
   def count_sentences
-    # self.scan(/[.!?...]/).count
-    self.split(/[.!?...]/).reject {|string| string.empty?}.length
+    # self.scan(/[.!?]/).count - this counts the elipses as 3
+    self.split(/[.!?]/).reject {|string| string.empty?}.length #this splits at the elipses to give 4 elements in an array
   end
 end
